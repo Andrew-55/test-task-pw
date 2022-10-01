@@ -1,0 +1,40 @@
+:root {
+
+    /* Color */
+    --white: #FFFFFF;
+    --orange-dark:#FF8B00;
+    --soft-purplish-blue: #7050E5;
+    --color-text-default: #878787;
+    --bg-second-block: #F8F8F8;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+.container {
+    margin: auto;
+    max-width: 1600px;
+    height: 100%;
+}
+
+/* First Block */
+.first-block__bg-blue {
+    background: url("./images/Bg.svg");
+    width: 1600px;
+    height: 810px;
+}
+
+/* Second Block */
+.second-block {
+    background-color: var(--bg-second-block);
+}
+
+
+
+/* --> Elements <-- */
+
+/* Button */
