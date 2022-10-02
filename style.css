@@ -1,4 +1,9 @@
+@import url("./fonts/ProximaNova/stylesheet.css");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
 :root {
+
+    --unit-length: 8px;
 
     /* Color */
     --white: #FFFFFF;
@@ -15,9 +20,37 @@
     box-sizing: border-box;
     line-height: 1;
 }
+a {
+    text-decoration:none;
+    color: inherit;
+    cursor: pointer;
+}
+
+input,
+textarea, button {
+    -webkit-appearance: none;
+    border-radius: 0;
+    text-align: inherit;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    color: inherit;
+    font: inherit;
+}
+textarea {
+    resize: none;
+}
+
+
+body {
+    font-family: 'Proxima Nova', sans-serif;
+}
+
 .container {
     margin: auto;
-    max-width: 1600px;
+    width: 1600px;
     height: 100%;
 }
 
@@ -33,8 +66,37 @@
     background-color: var(--bg-second-block);
 }
 
+/* Third Block */
 
+/* Footer */
+
+.footer > p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
 
 /* --> Elements <-- */
 
 /* Button */
+.button {
+    background-color: var(--orange-dark);
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+    width: 174px;
+    height: 53px;
+    padding: calc(var(--unit-length)/2) calc(var(--unit-length)*5);
+    border-radius: calc(var(--unit-length)/2);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 45px;
+}
+.button_third-block {
+    width: 171px;
+    height: 44px;
+    line-height: 18px;
+}
+.button_fourth-block {
+    width: 201px;
+    line-height: 18px;
+}

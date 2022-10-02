@@ -17,11 +17,11 @@
                     <div class="logo-main"><img src="./images/Logotype-Logo.png" alt="logotype"></div>
                     <nav class="menu">
                         <a href="" class="menu__item">HOME</a>
-                        <a href="" class="menu__item">PRODUCTS</a>
-                        <a href="" class="menu__item">SERVICES</a>
+                        <a href="#products" class="menu__item">PRODUCTS</a>
+                        <a href="#services" class="menu__item">SERVICES</a>
                         <a href="" class="menu__item">RESOURCES</a>
                         <a href="" class="menu__item">ABOUT</a>
-                        <a href="" class="menu__item">CONTACT US</a>
+                        <a href="#contacts" class="menu__item">CONTACT US</a>
                     </nav>
                 </header>
                 <div class="first-block__content">
@@ -46,7 +46,7 @@
     </section>
     <section class="second-block">
         <div class="container">
-            <h2 class="second-block__title">What We Do</h2>
+            <h2 id="services" class="second-block__title">What We Do</h2>
             <div class="second-block__cards">
                 <div class="card">
                     <div class="card__img"></div>
@@ -99,35 +99,68 @@
     </section>
     <section class="third-block">
         <div class="container">
-            <h2 class="third-block__title">Product Spotlight</h2>
+            <h2 id="products" class="third-block__title">Product Spotlight</h2>
             <div class="third-block__desctiption">Salt mSign Connected Token is a contemporary mobile security 2FA token
                 for authentication of user identity and verification of transactions independent of the delivery channel
                 that initiated the request.</div>
-            <button class="button">MORE INFO</button>
+            <button class="button button_third-block">MORE INFO</button>
             <div class="third-block__video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/V1bFr2SWP1I?controls=0&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/V1bFr2SWP1I?controls=0&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
             </div>
         </div>
     </section>
     <section class="fourth-block">
         <div class="container">
             <h2 class="fourth-block__title">Ready to get started?</h2>
-            <div class="fourth-block__contact">
+            <div id="contacts" class="fourth-block__contact">
                 <label for="contact-form">Contact us</label>
                 <form id="contact-form">
                     <label for="contact__firstname">First Name</label>
                     <input id="contact__firstname" name="firstname" type="text" placeholder="First Name" required>
                     <label for="contact__lastname">Last Name</label>
                     <input id="contact__lastname" name="lastname" type="text" placeholder="Last Name" required>
-                    <label for="contact__email"></label>
+                    <label for="contact__email">Email Address</label>
                     <input id="contact__email" name="email" type="email" placeholder="Email Address" required>
                     <label for="contact__textarea">Your message</label>
                     <textarea it="contact__textarea" placeholder="Textarea"></textarea>
-                    <button id="contact-form" type="submit">SEND</button>
+                    <button id="contact-form" class="button button_fourth-block" type="submit">SEND</button>
                 </form>
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="news-feed"></div>
+                <nav class="navigation">
+                    <h3 class="navigation__title">Navigation</h3>
+                        <a href="" class="menu__item">HOME</a>
+                        <a href="#products" class="menu__item">PRODUCTS</a>
+                        <a href="#services" class="menu__item">SERVICES</a>
+                        <a href="" class="menu__item">RESOURCES</a>
+                        <a href="" class="menu__item">ABOUT</a>
+                        <a href="#contacts" class="menu__item">CONTACT US</a>
+                </nav>
+                <nav class="links">
+                    <h3 class="links__title"></h3>
+                    <a href="" class="menu__item">links</a>
+                        <a href="" class="menu__item">Disclaimer</a>
+                        <a href="" class="menu__item">Legal</a>
+                        <a href="" class="menu__item">Environment Policy</a>
+                        <a href="" class="menu__item">Privacy</a>
+                </nav>
+                <div class="contact-sales">
+                    <h3 class="contact-sales__title">contact sales</h3>
+                    <p><span>PHONE:</span>+61 3 9614 4416</p>
+                    <p><span>EMAIL:</span>sales@saltgroup.com.au</p>
+                </div>
+                <div class="footer-logo">
+                    <img src="./images/Vector-Smart-Object.png" alt="logotype">
+                </div>
+                <p>© 2017 SALT GROUP      ALL RIGHTS RESERVED. WEBSITE BY DORNE CREATIVE.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
