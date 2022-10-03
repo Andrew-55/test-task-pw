@@ -13,7 +13,7 @@
     <section class="first-block">
         <div class="container">
             <div class="first-block__bg-blue">
-                <header>
+                <header class="header">
                     <div class="logo-main"><img src="./images/Logotype-Logo.png" alt="logotype"></div>
                     <nav class="menu">
                         <a href="" class="menu__item">HOME</a>
@@ -26,30 +26,29 @@
                 </header>
                 <div class="first-block__content">
                     <h1 class="first-block__title">Device Authentication</h1>
-                    <div class="first-block__description">SALT Group is a world leader in authentication and security.
-                        We have
-                        a range of services to improve user authentication.
-                        Discover the possibilities with SALT.</div>
+                    <div class="first-block__description">SALT Group is a world leader in authentication and security. We have a range of services to improve user authentication.<br>Discover the possibilities with SALT.</div>
                     <button class="button">GET STARTED</button>
-                    <div class="first-block__logo-bird"><img src="./images/Logotype-white_background.png"
-                            alt="logo-bird"></div>
+                    <div class="first-block__logo-bird"><img src="./images/Logotype-white_background.png"                             alt="logo-bird"></div>
                     <div class="first-block__fom">FIND OUT MORE</div>
                 </div>
             </div>
-            <div class="first-block__additional-info"><span>126,300</span>Identity Theft Cases Reported
-                in Australia</div>
-            <div class="first-block__additional-info"><span>$20.1bn</span>Online Transactions per
-                annum by Australians</div>
-            <div class="first-block__additional-info"><span>45,511</span>Online Fraud Cases Reported
-                in Australia</div>
+            <div class="first-block__additional-info">
+                <div class="additional-info__item"><span>126,300</span><p>Identity Theft Cases Reported in Australia</p></div>
+                <div class="additional-info__item"><span>$20.1bn</span><p>Online Transactions per annum by Australians</p></div>
+                <div class="additional-info__item"><span>45,511</span><p>Online Fraud Cases Reported in Australia</p></div>
+            </div>
         </div>
     </section>
     <section class="second-block">
         <div class="container">
+            <div class="icon-corner">
+                <div class="icon-corner__item"></div>
+                <div class="icon-corner__item icon-corner__item_two"></div>
+            </div>
             <h2 id="services" class="second-block__title">What We Do</h2>
             <div class="second-block__cards">
                 <div class="card">
-                    <div class="card__img"></div>
+                    <div class="card__img"><img src="./images/cards/rectangle1252.png" alt="device"> </div>
                     <div class="card__title">Device Authentication</div>
                     <div class="card__desc">Hardware-based device fingerprinting resilient to cloning,
                         malware and device jailbreak/root. Hardware-level control over the displayed UI independent of
@@ -57,14 +56,14 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card__img"></div>
+                    <div class="card__img"><img src="./images/cards/rectangle1253.png" alt="user-authentication"></div>
                     <div class="card__title">User Authentication</div>
                     <div class="card__desc">Verify the identity of users for access control with
                         contemporary biometric connected MFA security tokens.
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card__img"></div>
+                    <div class="card__img"><img src="./images/cards/rectangle1254.png" alt="transaction-authentication"></div>
                     <div class="card__title">Transaction Authentication</div>
                     <div class="card__desc">High assurance out-of-band authentication of high impact
                         transactions and instructions initiated through electronic service delivery channels. Audit
@@ -73,7 +72,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card__img"></div>
+                    <div class="card__img"><img src="./images/cards/vectorSmartObject_3.png" alt="labyrinth"></div>
+                    <div class="card__title">Contemporary authentication methods</div>
                     <div class="card__desc">Echidna authentication server to enable adaptive risk-based
                         approach to security through a range of methods for different levels of authentication assurance
                         from SMS OTPs, Challenge/Response, to more contemporary QR code signing and advanced connected
@@ -81,14 +81,14 @@
                         context and addition of PIN, Fingerprint and other biometrics.</div>
                 </div>
                 <div class="card">
-                    <div class="card__img"></div>
+                    <div class="card__img"><img src="./images/cards/vectorSmartObject_5.png" alt="hsm-solutions"></div>
                     <div class="card__title">HSM Solutions</div>
                     <div class="card__desc">Reseller of Thales nShield HSMs with professional services and
                         subject matter expertise in HSMs, key ceremony procedures, and SEE code development.
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card__img"></div>
+                    <div class="card__img"><img src="./images/cards/ellipse667.png" alt="cloud-security"></div>
                     <div class="card__title">Cloud & IoT Security</div>
                     <div class="card__desc">Secure the identity and access of users, devices and Internet
                         of Things connecting into the cloud. Support cloud adoption and migration of applications and
@@ -99,30 +99,43 @@
     </section>
     <section class="third-block">
         <div class="container">
-            <h2 id="products" class="third-block__title">Product Spotlight</h2>
-            <div class="third-block__desctiption">Salt mSign Connected Token is a contemporary mobile security 2FA token
-                for authentication of user identity and verification of transactions independent of the delivery channel
-                that initiated the request.</div>
-            <button class="button button_third-block">MORE INFO</button>
+            <div class="third-block__content">
+                <h2 id="products" class="third-block__title">Product Spotlight</h2>
+                <div class="third-block__desctiption">Salt mSign Connected Token is a contemporary mobile security 2FA token
+                    for authentication of user identity and verification of transactions independent of the delivery channel
+                    that initiated the request.</div>
+                <button class="button button_third-block">MORE INFO</button>
+            </div>
             <div class="third-block__video">
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/V1bFr2SWP1I?controls=0&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                <!-- <iframe width="724px" height="444px" src="https://www.youtube.com/embed/V1bFr2SWP1I?controls=0&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
             </div>
         </div>
     </section>
     <section class="fourth-block">
         <div class="container">
-            <h2 class="fourth-block__title">Ready to get started?</h2>
+            <div class="rectangle-1595"></div>
+            <h2 class="fourth-block__title">Ready<br>to get started?</h2>
             <div id="contacts" class="fourth-block__contact">
-                <label for="contact-form">Contact us</label>
+                <h3 class="contact-form__title">Contact us</h3>
                 <form id="contact-form">
-                    <label for="contact__firstname">First Name</label>
-                    <input id="contact__firstname" name="firstname" type="text" placeholder="First Name" required>
-                    <label for="contact__lastname">Last Name</label>
-                    <input id="contact__lastname" name="lastname" type="text" placeholder="Last Name" required>
-                    <label for="contact__email">Email Address</label>
-                    <input id="contact__email" name="email" type="email" placeholder="Email Address" required>
-                    <label for="contact__textarea">Your message</label>
-                    <textarea it="contact__textarea" placeholder="Textarea"></textarea>
+                    <div class="form-input">
+                        <div>
+                            <label for="contact__firstname">First Name</label>
+                            <input id="contact__firstname" name="firstname" type="text" placeholder="First Name" required>
+                        </div>
+                        <div>
+                            <label for="contact__lastname">Last Name</label>
+                            <input id="contact__lastname" name="lastname" type="text" placeholder="Last Name" required>
+                        </div>
+                        <div>
+                            <label for="contact__email">Email Address</label>
+                            <input id="contact__email" name="email" type="email" placeholder="Email Address" required>
+                        </div>
+                        <div>
+                            <label for="contact__textarea">Your message</label>
+                            <textarea it="contact__textarea" placeholder="Textarea"></textarea>
+                        </div>
+                    </div>
                     <button id="contact-form" class="button button_fourth-block" type="submit">SEND</button>
                 </form>
             </div>
