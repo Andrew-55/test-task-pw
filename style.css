@@ -53,7 +53,7 @@ body {
 
 .container {
     margin: auto;
-    width: 1600px;
+    max-width: 1600px;
     height: 100%;
 }
 
@@ -136,6 +136,16 @@ body {
 .second-block {
     background-color: var(--bg-second-block);
     padding: calc(var(--unit-length)*15) 0;
+}
+.second-block__header {
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+    align-content: end;
+    column-gap: 19px;
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-bottom: calc(var(--unit-length)*8.5);
 }
 .second-block__title {
     font-size: 60px;
@@ -267,25 +277,64 @@ body {
     background-color: var(--bg-footer-main);
 }
 .footer > .container {
-    padding-top: calc(var(--unit-length)*7);
+    position: relative;
+    padding-top: calc(var(--unit-length)*7);    
+}
+.footer__content {
+    display: flex;
+    justify-content: center;
+    column-gap: calc(var(--unit-length)*15);
+}
+.footer-navigations {
+    display: flex;
+    column-gap: 132px;
+}
+.footer-navigations > * {
+    display: flex;
+    flex-direction: column;
+}
+.footer-navigations__title {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin-bottom: calc(var(--unit-length)*2.5);
+    color: var(--orange-dark);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.footer-navigations__item {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.footer-navigations__item:not(:last-child){
+    margin-bottom: var(--unit-length);
+}
+.footer-navigations__item > span {
+    text-transform: initial;
+}
+.footer-logo {
+    position: absolute;
+    bottom: 55px;
+    right: 32px;
 }
 .footer-copywritght {
+    display: flex;
+    margin-top: calc(var(--unit-length)*6.25);
     background-color: var(--bg-footer-two);
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     font-family: 'Raleway', sans-serif;
     font-size: 10px;
     font-weight: 500;
     line-height: 20px;
 }
-.footer__content {
-    display: flex;
-}
-.footer-navigations {
-    display: flex;
-}
-.footer-navigations > * {
-    display: flex;
-    flex-direction: column;
+.footer-copywritght .polygon_little {
+    margin: 0 3px;
 }
 
 /* --> Elements <-- */
@@ -440,4 +489,16 @@ body {
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.01em;
+}
+
+/* Polygon */
+.polygon {
+    width: 17.5px;
+    height: 20px;
+    background-color: var(--orange-dark);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.polygon_little {
+    width: 9px;
+    height: 10px;
 }
