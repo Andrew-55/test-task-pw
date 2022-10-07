@@ -122,7 +122,7 @@ body {
 .first-block__title {
     margin-bottom: calc(var(--unit-length)*1.5);
     font-size: 55px;
-    line-height: 55px;
+    line-height: 1em;
 }
 .first-block__description {
     margin-bottom: calc(var(--unit-length)*5.5);
@@ -383,9 +383,12 @@ body {
 
 /* Card */
 .card__img {
+    height: 150px;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
+
 .card__title {
     margin-top: calc(var(--unit-length)*3.5);
     margin-bottom: var(--unit-length);
@@ -555,8 +558,8 @@ body {
     :root {
         --unit-length: 0.5vw;
     }
- 
 }
+
 @media screen and (max-width: 1499px) {
    /* First Block */
    .first-block__bg-blue {
@@ -573,6 +576,7 @@ body {
         margin-right: calc(var(--unit-length)*30);
     }
 }
+
 @media screen and (max-width: 1420px) {
        /* First Block */
     .first-block__bg-blue {
@@ -604,7 +608,12 @@ body {
     .fourth-block__title {
         width: 220px;
     }
+    /* Footer */
+    .footer-navigations {
+        column-gap: calc(var(--unit-length)*10);
+    }
 }
+
 @media screen and (max-width: 1200px) {
     /* First Block */
     .header {
@@ -629,8 +638,74 @@ body {
     .fourth-block__title {
         margin-right: calc(var(--unit-length)*9);
     }
+    /* Footer */
+    .footer__content {
+        column-gap: calc(var(--unit-length)*6);
+    }
+    .footer-navigations {
+        column-gap: calc(var(--unit-length)*8);
+    }
 }
 @media screen and (max-width: 992px) {
+    :root {
+        --unit-length: 5px;
+    }
+     /* First Block */
+     .header {
+        height: 75px;
+        column-gap: calc(var(--unit-length)*23);
+    }
+    .menu {
+        width: initial;
+        gap: 15px;
+    }
+    .menu__item {
+        padding-bottom: 4px;
+        font-size: 14px;
+    }
+    .first-block__content__wrap > div:first-child {
+        margin-right: calc(var(--unit-length)*15);
+    }
+    .first-block__title {
+        font-size: 43px;
+    }
+    .first-block__description {
+        width: 420px;
+        height: initial;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    .first-block__logo-bird img {
+        width: 125px;
+        height: 100px;
+    }
+    .first-block__content__wrap {
+         margin-bottom: calc(var(--unit-length)*30);
+    }
+    .first-block__additional-info {
+        gap: calc(var(--unit-length)*8);
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .additional-info__item {
+        width: 207px;
+        height:fit-content;
+    }
+    /* Second block */
+    .second-block__cards {
+        grid-template-columns: 281px 281px;
+        justify-content: center;
+    }
+    .second-block__header {
+        max-width: 700px;
+    }
+
+    /* --> Elements <-- */
+    /* Card */
+    .card__desc {
+        letter-spacing: -0.008em;
+    }
 
 }
 @media screen and (max-width: 768px) {
