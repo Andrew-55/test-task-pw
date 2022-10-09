@@ -841,7 +841,7 @@ body {
         flex-direction: column-reverse;
         row-gap: 64px;
         align-items: center;
-        margin-bottom: calc(var(--unit-length)*16);
+        margin-bottom: calc(var(--unit-length)*10);
     }
     .first-block__content__wrap > div:first-child {
         margin-right: initial;
@@ -993,6 +993,9 @@ body {
     .first-block__description {
         width: 85vw;
         line-height: 20px;
+    }
+    .first-block__content__wrap {
+        margin-bottom: calc(var(--unit-length)*16);
     }
     /* Fourth Block */
     .fourth-block__title {
